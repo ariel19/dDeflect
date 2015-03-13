@@ -1,0 +1,18 @@
+{
+	"name": "Thread check",
+	"used_registers": [ "All" ],
+	"parameters": [
+		{
+		  "sleep1" : "0"
+		},
+		{
+		  "sleep2" : "5"
+		}
+	],
+	"returns": "RAX",
+	"methods": [],
+	"architecture": "lin_x86",
+	"type" : "ThreadWrapper",
+	"path": "adding_methods/methods/linux/x64/multi.asm",
+	"description": "Main wrapper for multi check routines"
+}

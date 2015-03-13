@@ -1,0 +1,11 @@
+{
+	"name": "Single check wrapper",
+	"used_registers": [ "All" ],
+	"parameters": [],
+	"returns": "RAX",
+	"methods": [],
+	"architecture": "lin_x64",
+	"type" : "OEPWrapper",
+	"path": "adding_methods/methods/linux/x64/single.asm",
+	"description": "Main wrapper for single check routines"
+}

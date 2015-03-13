@@ -1,0 +1,28 @@
+{
+  "name": "Hide Thread From Debugger",
+  "used_registers": [
+    "RAX",
+    "RDX",
+    "RCX",
+    "R8",
+    "R9",
+    "R10",
+    "R11"
+  ],
+  "parameters": [
+    {
+      "RAX": "ntdll!NtSetInformationThread"
+    }
+  ],
+  "returns": "RAX",
+  "methods": [
+    "TLS",
+    "EntryPoint",
+    "Trampoline",
+    "Thread"
+  ],
+  "architecture": "win_x64",
+  "type": "Method",
+  "path": "data/detection/win/x64/nt_set_information_thread.asm",
+  "description": "This method tries to hide thread from debugger by setting specific field of ThreadInformationClass structure."
+}

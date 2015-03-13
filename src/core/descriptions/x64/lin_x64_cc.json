@@ -1,0 +1,36 @@
+{
+  "name": "Code checksum",
+  "used_registers": [
+    "RAX",
+    "RBX",
+    "RCX",
+    "RDX",
+    "RDI",
+    "RSI"
+  ],
+  "parameters": [
+		{
+    	"magic!sec_checksum" : ""
+		},
+		{
+    	"magic!sec_size" : ""
+		},
+		{
+    	"dyn_magic!offset" : ""
+		}
+  ],
+  "returns": "RAX",
+  "methods": [
+    "EntryPoint",
+    "Thread",
+    "Trampoline",
+    "INIT",
+    "INIT_ARRAY",
+    "CTORS"
+  ],
+  "architecture": "lin_x64",
+  "type" : "Method",
+  "path": "data/detection/linux/x64/cc.asm",
+  "obfuscation" : "no",
+  "description": "Technique that calculates checksum of executable file code section and checks it with the previously calculated checksum. P.S. method could not be used with obfuscation technique. Usage leads to incorrect debugger detection"
+}

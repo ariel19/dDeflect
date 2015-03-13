@@ -1,0 +1,31 @@
+{
+  "name": "Self Open",
+  "used_registers": [
+    "EAX",
+    "ECX",
+    "EDX",
+    "EBX",
+    "EDI"
+  ],
+  "parameters": [
+    {
+      "EAX": "kernel32!GetModuleFileNameA"
+    },
+    {
+      "EBX": "kernel32!CloseHandle"
+    },
+    {
+      "EDI": "kernel32!CreateFileA"
+    }
+  ],
+  "returns": "EAX",
+  "methods": [
+    "TLS",
+    "EntryPoint",
+    "Trampoline"
+  ],
+  "architecture": "win_x86",
+  "type": "Method",
+  "path": "data/detection/win/x86/create_file.asm",
+  "description": "Code attempts to open exclusively the file of current process using CreateFile Windows API function. When some debuggers are present, this action will always fail."
+}

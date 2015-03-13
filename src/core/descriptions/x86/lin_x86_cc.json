@@ -1,0 +1,36 @@
+{
+  "name": "Code checksum",
+  "used_registers": [
+    "EAX",
+    "EBX",
+    "ECX",
+    "EDX",
+    "EDI",
+    "ESI"
+  ],
+  "parameters": [
+		{
+    	"magic!sec_checksum" : ""
+		},
+		{
+    	"magic!sec_size" : ""
+		},
+		{
+      "dyn_magic!offset" : ""
+		}
+  ],
+  "returns": "EAX",
+  "methods": [
+    "EntryPoint",
+    "Thread",
+    "Trampoline",
+    "INIT",
+    "INIT_ARRAY",
+    "CTORS"
+  ],
+  "architecture": "lin_x86",
+  "type" : "Method",
+  "path": "data/detection/linux/x86/cc.asm",
+  "obfuscation" : "no",
+  "description": "Technique that calculates checksum of executable file code section and checks it with the previously calculated checksum. P.S. method could not be used with obfuscation technique. Usage leads to incorrect debugger detection"
+}
