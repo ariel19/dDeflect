@@ -1,11 +1,10 @@
-#include "dsettings.h"
-
 #include <QFile>
-#include <helper/logger/dlogger.h>
 #include <QJsonObject>
 #include <QJsonParseError>
 
+#include <helper/logger/dlogger.h>
 #include <core/file_types/codedefines.h>
+#include <helper/settings_parser/dsettings.h>
 
 const QString DSettings::file_name = "settings.json";
 

@@ -95,7 +95,7 @@ public:
     public:
         CallingMethod cm;
         Wrapper<RegistersType> *adding_method;
-        QString saved_fname;
+        // QString saved_fname;
         bool change_x_only;
     };
 
@@ -511,6 +511,7 @@ public:
      * @param w instancja Wrapper.
      */
     Wrapper(const Wrapper& w){
+        // TODO: WTF?????? should be changed
         name = w.name;
         description = w.description;
         wrapper_type = w.wrapper_type;
